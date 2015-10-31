@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Intro to Programming Notes</title>
+    <link rel="stylesheet" type="text/css" href="notestyle.css">
+  </head>
+  <body>
+    <div class="table">
+      <h1>Table of Contents</h1> 
+        <ol>
+          <li><a href="#sec_0">Stage 0</a>
+            <ul>
+              <li><a href="#sec_0_0">Useful tools</a></li>
+              <li><a href="#sec_0_1">Tags to remember</a></li>
+            </ul>
+          <li><a href="#sec_1">Stage 1</a>
+            <ul>
+              <li><a href="#sec_1_0">CSS Styling</a></li>
+              <li><a href="#sec_1_1">Box Sizing</a></li>
+              <li><a href="#sec_1_2">Box Positioning</a></li>
+            </ul>
+        </ol>
+    </div>
+    <h1>Intro to Programming Notes</h1>
+    <div class="notes">
+      <div class="stage">
+       	<h2 id="sec_0">Stage 0 Notes</h2>
+    		<div class="content">
+    			-html - hypertext markup language<br>
+    			-browser makes requests to servers, servers respond with files.<br>
+    			-http - protocol to communicate between machines<br>
+    			-markup = tags &lt;name>content &lt;/name&gt;<br>
+    			-tags + content = element<br>
+          <h3 id="sec_0_0">Useful tools</h3>
+          <a href="https://www.sublimetext.com/">Sublime Text</a><br>
+          <a href="http://codepen.io/">Codepen</a><br>
+          <a href="http://scratchpad.io/">Scratchpad</a><br>
+          <h3 id="sec_0_1">Tags to Remember</h3>
+    			&lt;b&gt; - bold<br>
+    			&lt;em&gt; -italics<br>
+    			&lt;a&gt; anchor tag - make links<br>
+    			&lt;a href=“www.website.com”&gt;Link_Display&lt;/a&gt;<br>
+    			&lt;img&gt; - image tag<br>
+    			&lt;img src=“url” alt=“text”&gt; (NO CLOSING TAG)<br>
+    			&lt;br&gt; - break, also void tag. skip to next line<br>
+    			&lt;p&gt; - paragraph, put around all text to make paragraph<br>
+    			&lt;span&gt; - inline<br>
+    			&lt;div&gt; - block<br>
+    		</div>
+      </div>
+    	<div class="stage">
+    		<h2 id="sec_1">Stage 1 Notes</h2>
+    		<div class="content">
+    			-Html is the structure of a web page<br>
+    			-A web page is basically a series of boxes filled with conent<br>
+    			-&lt;div&gt; defines a section in an HTML doc<br>
+          -HTML and coding in general is done in a tree like structure<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;-This means that it is branching.<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;-You can include elements within elements, nesting.<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;-An example of nesting would be<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;- The above is an example of one element in another, but it is not limited to that<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;-You can nest multiple elements within each other.
+          <h3 id="sec_1_0">CSS Styling</h3>
+          -CSS is styling for html<br>
+          -Using CSS you can change the color, font, or text size<br>
+          -The CSS file should be in the same folder as the HTML file<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;-You point the HTML file to the CSS file using the &lt;link&gt; element.<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;-doesn't have to be, but you have to link the full path<br>
+          -A class is a selector included in an HTML element. example: &lt;div class="content"&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;-Within the CSS file you define stylistic properties to classes, headers, or other elements in the html document.<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;-for example, the code below included in a css file would color the text within all elements containing the CSS selector "content" blue.<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.content{<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: blue;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+          -It is possible to stlye text and all other attributes within the HTML document without using a css file at all.<br>
+          -Styling using CSS is preffered because it reduces repetition when creating code.<br>
+          -Reducing repetition is important for multiple reasons<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;-CSS styling allows you to quickly make a style change to many items in one html page with minimal coding. For instance, I can change all headers to green from blue by simply changing the word from green to blue one time in the css file.<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;-If I were to style each element in the html doc, I would have to change that style numerous times, creating additional work for myself.<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;-People make mistakes, by using repetition you reduce the amount of code you have to write, thereby reducing the opportunity to make mistakes.<br>
+    		  <h3 id="sec_1_1">Box Sizing</h3>
+          4 main points<br>
+          -HTML elements are boxes and each box has 4 components.<br>
+          -Because there are so many components to each box, it can often be hard to get the size of a box just right.<br>
+          -There are two techniques you can use to help deal with sizing issues.<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;-Set sizes in terms of percentages rather than pixels.<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;-Set the box-sizing attribute to border-box for every element.<br>
+          -Different browsers work slightly differently. Sometimes this causes different browsers to display the same code differently.<br> 
+          <h3 id="sec_1_2">Box Positioning</h3>
+          -Divs are block elements (as opposed to inline), so by default they take up the entire width of a page.<br>
+          -Adding the rule display: flex; to the appropriate CSS will override this behavior and let divs appear next to each other.<br>
+    		</div>
+    	</div>
+    </div>  
+    <p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+    </body>
+</html>

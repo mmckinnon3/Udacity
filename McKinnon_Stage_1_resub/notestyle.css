@@ -1,0 +1,56 @@
+*{
+	box-sizing: border-box
+}
+
+body{
+	color: #F9ECA4;
+	background-image: url(http://imgur.com/kjjX6mj.jpg);
+	font-family: arial;
+}
+
+h1{
+	text-align: center;
+ 	line-height: 3;
+ 	font-size: 250%;
+}
+
+h2{
+	line-height: 1;
+	margin-top: 10px;
+}
+
+a:link{
+	color: #F9ECA4;
+}
+
+a:visited{
+	color: #00E0FB;
+}
+
+.table{
+	font-size: x-large;
+	max-width: 95%;
+	margin: auto;
+}
+
+.notes{
+	max-width: 95%;
+	margin: 15px auto;
+}
+
+.stage{
+	background-color: #730808;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 10px auto;
+	text-align: center;
+}
+
+.content{
+	background-color:#1A237E;
+	border-radius: 10px;
+	padding: 4px;
+	margin: 10px;
+	text-align: left;
+}
+
